@@ -1,0 +1,70 @@
+.cx-about
+    margin-top 33px
+    &__description
+        margin-top -2px
+        letter-spacing: -0.05px
+    &__checkboxes
+        margin-top 28px
+        display flex
+        @media screen and (max-width: 600px)
+            flex-direction: column
+            align-items center
+    &__column
+        &_id_1
+            width 260px
+        &_id_2
+            width 270px
+            @media screen and (max-width: 600px)
+                margin-left 10px
+        &_id_3   
+            width 242px
+            @media screen and (max-width: 600px)
+                margin-left -18px
+    &__row
+        align-items flex-end   
+        margin-bottom 10px  
+        @media screen and (max-width: 600px)
+            margin-bottom 20px
+    &__label
+        line-height 25px
+        font-size: 21px  
+    &__checkbox:not(:checked), &__checkbox:checked 
+        position: absolute
+        left: -9999px
+    &__checkbox:not(:checked) + &__label, &__checkbox:checked + &__label 
+        position: relative
+        padding-left: 28px
+        cursor: pointer
+    &__checkbox:not(:checked) + &__label:before, &__checkbox:checked + &__label:before
+        content: ''
+        position: absolute
+        left: 0 
+        top: 5px
+        width: 19px 
+        height: 18px
+        background: url("../../checkbox.png") no-repeat
+    &__checkbox:not(:checked) + &__label:after, &__checkbox:checked + &__label:after
+        content: ''
+        position: absolute
+        width: 21px
+        height: 27px
+        top: -5px
+        left: 3px
+        transition: all .2s
+        background: url("../../checked.png") no-repeat
+    &__checkbox:not(:checked) + &__label:after
+        opacity: 0
+        transform: scale(0)
+    &__checkbox:checked + &__label:after
+        opacity: 1
+        transform: scale(1)
+ 
+.title
+    font-size: 24px
+    line-height 49.83px
+    color: #2f1b15
+.description
+    font-family "PT Sans"
+    line-height 23px
+    color #3d3d3d    
+    font-size: 15px

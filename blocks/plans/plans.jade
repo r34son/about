@@ -1,0 +1,18 @@
+.plans
+    .plans__title.title.bold Какие у вас планы на будущее?
+    p.plans__description.description.
+        Этот ответ ни на что не повлияет. 
+        Не беда, если в будущем ваши планы поменяются.
+    form.plans__inputs
+        .plans__input
+            input.plans__radio#plans1(type="radio" name="plan")
+            label.plans__label.bold(for="plans1") Верстать
+        .plans__input
+            input.plans__radio#plans2(type="radio" name="plan" checked)
+            label.plans__label.bold(for="plans2") Прокачиваться в JS
+        .plans__input
+            input.plans__radio#plans3(type="radio" name="plan")
+            label.plans__label.bold(for="plans3") Менеджерство
+        .plans__input
+            input.plans__radio#plans4(type="radio" name="plan")
+            label.plans__label.bold(for="plans4") Другое

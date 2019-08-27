@@ -1,0 +1,17 @@
+import('sprites/*')
+import('helpers/svg-size')
+@import 'helpers/variables'
+@import 'helpers/mixins'
+@import 'helpers/fonts'
+@import 'helpers/optimize'
+
+import('../blocks/**/*')
+
+.wrapper
+    width: 770px
+    margin: 0 auto
+    @media screen and (max-width: 600px)
+        width 85%
+body    
+    background-image url("../../background.png")
+    font-family: "PTSans"
